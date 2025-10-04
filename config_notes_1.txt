@@ -1,0 +1,35 @@
+============R0===============
+enable
+configure terminal
+int s0/1/0
+ip address 11.0.0.2  255.255.255.252
+clock rate 64000
+no shutdown
+exit
+
+int g0/0/0
+ip address 192.168.10.1  255.255.255.0
+no shut
+exit
+
+
+============R1====================
+enable
+config term
+int s0/2/0
+ip address 11.0.0.1  255.255.255.252
+no shut
+exit
+
+int g0/0/0
+ip address 192.168.20.1  255.255.255.0
+no shut
+exit
+
+
+
+
+=========== static (R0 & R1) ===============
+===========configure terminal =============
+ip route 0.0.0.0  0.0.0.0 s0/1/0
+ip route 0.0.0.0  0.0.0.0 s0/2/0
