@@ -101,8 +101,9 @@ Assignment 1
 ## Instructor
 
 **Sheikh Hasanul Banna** - (BUET)  
-Lecturer, Computer Science & Engineering  
+Lecturer, Computer Science & Engineering - (PU)
 
 ## License
+
 
 This project is for educational purposes.
